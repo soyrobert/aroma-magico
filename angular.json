@@ -7,6 +7,7 @@
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
+          "node_modules/bootstrap/dist/css/bootstrap.min.css",
           "style": "scss"
         }
       },
@@ -100,5 +101,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "8d039b8d-5322-4535-9cae-3cf6c317994f"
   }
 }
