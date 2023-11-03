@@ -9,12 +9,20 @@ import { Cafe } from '../models/cafe';
 })
 export class ListaCafesComponent implements OnInit {
   cafes: Cafe[] = [];
+  totalCafeDeOrigen: number = 0;
+  totalCafeBlend: number = 0;
 
   constructor(private cafeService: CafeService) { }
 
   ngOnInit(): void {
     this.cafeService.getCafes().subscribe(data => {
       this.cafes = data;
+      this.calculateCafesByType();
     });
+  }
+
+  calculateCafesByType(): void {
+    this.totalCafeDeOrigen = this.cafes.filter(cafe => cafe.tipo === 'Café de Origen').length;
+    this.totalCafeBlend = this.cafes.filter(cafe => cafe.tipo === 'Blend').length;
   }
 }
