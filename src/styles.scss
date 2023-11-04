@@ -1,2 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:wght@400;900&display=swap');
+.navbar-brand{
+    font-family: 'Grandstander', cursive;
+    font-size: 25px;
+    font-weight: 400;
+}
+p{
+    line-height: 1;
+}
