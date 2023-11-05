@@ -1,3 +1,4 @@
+[![Angular Tests](https://github.com/soyrobert/aroma-magico/actions/workflows/build_test_merge_main.yml/badge.svg)](https://github.com/soyrobert/aroma-magico/actions/workflows/build_test_merge_main.yml)
 # AromaMagico
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.9.
